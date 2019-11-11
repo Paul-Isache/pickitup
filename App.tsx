@@ -8,15 +8,15 @@
  * @format
  */
 
-import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 import Login from './src/login'
 import Registration from './src/registration'
 
 const MainNavigator = createStackNavigator({
-  Login: {screen: Login},
-  Registration: {screen: Registration},
+  Login: { screen: Login },
+  Registration: { screen: Registration },
 });
 
 const App = createAppContainer(MainNavigator);
