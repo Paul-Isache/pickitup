@@ -56,7 +56,7 @@ export default class Login extends React.Component {
         </View>
         <Text style={[styles.greeting]}>
           Welcome back,
-              </Text>
+        </Text>
         <Text style={[styles.greeting2]}>
           sign in to continue
         </Text>
@@ -81,7 +81,8 @@ export default class Login extends React.Component {
           title='Sign In'
           onPress={this.signIn.bind(this)}
         />
-        <Text style={[styles.errorMessage, signInError && { color: 'black' }]}>Error logging in. Please try again.</Text> 
+
+        <Text style={[styles.errorMessage, signInError && { color: 'black' }]}>Error logging in. Please try again.</Text>
         <Text style={[styles.errorMessage, signInError && { color: 'black' }]}>{signInErrorMessage}</Text>
         {
           !!showSignInConfirmationModal && (
